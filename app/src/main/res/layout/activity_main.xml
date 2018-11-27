@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/EstiloVert" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout style="@style/EstiloHoriz">
+
+        <TextView style="@style/txtVNombre"
+            android:id="@+id/txtVNombre"
+            android:text="@string/txtVNombre"
+            android:textColor="@color/colorAccent" />
+        <EditText style="@style/txtNombre"
+            android:id="@+id/txtNombre" />
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+
+        <TextView style="@style/txtVApellidos"
+            android:id="@+id/txtVApellidos"
+            android:text="@string/txtVApellidos"
+            android:textColor="@color/colorAccent"/>
+        <EditText style="@style/txtApellidos"
+            android:id="@+id/txtApellidos"
+            android:hint="@string/txtApellidos"/>
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+        <TextView style="@style/txtVEdad"
+            android:id="@+id/txtVEdad"
+            android:text="@string/txtVEdad"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText style="@style/editText"
+            android:id="@+id/editText" />
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+
+        <TextView style="@style/txtVGenero"
+            android:id="@+id/txtVGenero"
+            android:text="@string/txtVGenero"
+            android:textColor="@color/colorAccent" />
+
+        <RadioGroup style="@style/RDGenero"
+            android:id="@+id/RDGenero">
+
+            <RadioButton style="@style/radioButtonHombre"
+                android:id="@+id/radioButtonHombre"
+                android:text="@string/radioButtonHombre"/>
+
+            <RadioButton style="@style/radioButtonMujer"
+                android:text="@string/radioButtonMujer"
+                android:id="@+id/radioButtonMujer"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+
+        <TextView style="@style/txtVEstadoCivil"
+            android:id="@+id/txtVEstadoCivil"
+            android:text="@string/txtVEstadoCivil"
+            android:textColor="@color/colorAccent" />
+
+        <Spinner style="@style/lstEstado"
+            android:id="@+id/lstEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+        <TextView style="@style/txtVHijos"
+            android:id="@+id/txtVHijos"
+            android:text="@string/txtVHijos"
+            android:textColor="@color/colorAccent"/>
+        <Switch style="@style/switchHijos"
+            android:id="@+id/switchHijos" />
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnLimpiar" />
+        <Button
+            android:id="@+id/btnTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnTexto" />
+    </LinearLayout>
+    <LinearLayout style="@style/EstiloHoriz">
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
