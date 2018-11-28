@@ -19,6 +19,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView txtVNombre;
     TextView txtVApellidos;
+    TextView txtVEdad;
+    TextView txtVGenero;
+    TextView txtVEstadoCivil;
+    TextView txtVHijos;
     EditText txtNombre;
     EditText txtApellidos;
     EditText editText;
@@ -31,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     String[] Estado;
     String switch5 = "";
     Typeface Guthen;
-    Typeface Zallord;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txtVNombre = findViewById(R.id.txtVNombre);
         txtVApellidos = findViewById(R.id.txtVApellidos);
+        txtVEdad = findViewById(R.id.txtVEdad);
+        txtVGenero = findViewById(R.id.txtVGenero);
+        txtVEstadoCivil = findViewById(R.id.txtVEstadoCivil);
+        txtVHijos = findViewById(R.id.txtVHijos);
         txtNombre = findViewById(R.id.txtNombre);
         txtApellidos = findViewById(R.id.txtApellidos);
         editText = findViewById(R.id.editText);
@@ -105,13 +112,69 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Fuentes
-        String fuente1 = "fuentes/Zallord.ttf";
-        this.Zallord = Typeface.createFromAsset(getAssets(),fuente1);
-        txtVNombre.setTypeface(Zallord);
+        String fuente1 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente1);
+        txtVNombre.setTypeface(Guthen);
 
         String fuente2 = "fuentes/Guthen.ttf";
         this.Guthen = Typeface.createFromAsset(getAssets(),fuente2);
         txtVApellidos.setTypeface(Guthen);
+
+        String fuente3 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente3);
+        txtVEdad.setTypeface(Guthen);
+
+        String fuente4 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente4);
+        txtVGenero.setTypeface(Guthen);
+
+        String fuente5 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente5);
+        txtVEstadoCivil.setTypeface(Guthen);
+
+        String fuente6 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente6);
+        txtVHijos.setTypeface(Guthen);
+
+        String fuente7 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente7);
+        btnLimpiar.setTypeface(Guthen);
+
+        String fuente8 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente8);
+        btnTexto.setTypeface(Guthen);
+
+        String fuente9 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente9);
+        txtNombre.setTypeface(Guthen);
+
+        String fuente10 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente10);
+        txtApellidos.setTypeface(Guthen);
+
+        String fuente11 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente11);
+        editText.setTypeface(Guthen);
+
+        String fuente12 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente12);
+        radioButtonHombre.setTypeface(Guthen);
+
+        String fuente13 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente13);
+        radioButtonMujer.setTypeface(Guthen);
+
+        /*
+        String fuente14 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente14);
+        lstEstado.setTypeface(Guthen);
+        */
+
+        String fuente15 = "fuentes/Guthen.ttf";
+        this.Guthen = Typeface.createFromAsset(getAssets(),fuente15);
+        switchHijos.setTypeface(Guthen);
+
+
 
     }
 }
